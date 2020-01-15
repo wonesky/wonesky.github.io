@@ -1,0 +1,492 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="打开自己的博客网站，看到发表的最后一篇文章距今已快三个月了。回头看看，去年5月份想把博客写下去，重新搭建了博客平台写下了开篇“再次启程”，在接下来的一个月又写了2篇，就再没有了音信，直到今年3月和4月又脑袋发热写了2篇工具使用总结文章。那还是个位数的文章总篇数，真是不堪入目。把这事忘了吗？其实那个想写的念头还未完全熄灭；那为啥就没有更新了？我也在问自己，咋就不能坚持写下去呢？">
+<meta name="keywords" content="写作">
+<meta property="og:type" content="article">
+<meta property="og:title" content="还能写下去吗">
+<meta property="og:url" content="https:&#x2F;&#x2F;wonesky.com&#x2F;2016&#x2F;07&#x2F;09&#x2F;%E8%BF%98%E8%83%BD%E5%86%99%E4%B8%8B%E5%8E%BB%E5%90%97&#x2F;index.html">
+<meta property="og:site_name" content="空一夜航">
+<meta property="og:description" content="打开自己的博客网站，看到发表的最后一篇文章距今已快三个月了。回头看看，去年5月份想把博客写下去，重新搭建了博客平台写下了开篇“再次启程”，在接下来的一个月又写了2篇，就再没有了音信，直到今年3月和4月又脑袋发热写了2篇工具使用总结文章。那还是个位数的文章总篇数，真是不堪入目。把这事忘了吗？其实那个想写的念头还未完全熄灭；那为啥就没有更新了？我也在问自己，咋就不能坚持写下去呢？">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:updated_time" content="2019-11-16T06:00:07.641Z">
+<meta name="twitter:card" content="summary">
+
+<link rel="canonical" href="https://wonesky.com/2016/07/09/%E8%BF%98%E8%83%BD%E5%86%99%E4%B8%8B%E5%8E%BB%E5%90%97/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>还能写下去吗 | 空一夜航</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">空一夜航</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">wonesky's Blog</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wonesky.com/2016/07/09/%E8%BF%98%E8%83%BD%E5%86%99%E4%B8%8B%E5%8E%BB%E5%90%97/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wonesky">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="空一夜航">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          还能写下去吗
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-07-09 19:58:38" itemprop="dateCreated datePublished" datetime="2016-07-09T19:58:38+08:00">2016-07-09</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-16 14:00:07" itemprop="dateModified" datetime="2019-11-16T14:00:07+08:00">2019-11-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E4%B8%AA%E4%BA%BA/" itemprop="url" rel="index">
+                    <span itemprop="name">个人</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>打开自己的博客网站，看到发表的最后一篇文章距今已快三个月了。回头看看，去年5月份想把博客写下去，重新搭建了博客平台写下了开篇<a href="http://www.wonesky.com/2015/05/21/%E5%86%8D%E6%AC%A1%E5%90%AF%E7%A8%8B/" target="_blank" rel="noopener">“再次启程”</a>，在接下来的一个月又写了2篇，就再没有了音信，直到今年3月和4月又脑袋发热写了2篇工具使用总结文章。那还是个位数的文章总篇数，真是不堪入目。把这事忘了吗？其实那个想写的念头还未完全熄灭；那为啥就没有更新了？我也在问自己，咋就不能坚持写下去呢？</p>
+<a id="more"></a>
+<p>前段时间看到李笑来在<a href="http://mp.weixin.qq.com/s?__biz=MzAxNzI4MTMwMw==&mid=2651629988&idx=1&sn=a870423711e0a2a5018b6bdb1125f64b&scene=4#wechat_redirect" target="_blank" rel="noopener">新生大学写作课的宣讲部分</a>讲的内容，再次被刺激到了。在笑来老师的影响下，有那么一群以学习为乐的人，在不断升级自己的操作系统，通过践行，不断积累，改变自我。和他们相比，我的行动力还是太弱了。</p>
+<h3 id="写，写，写"><a href="#写，写，写" class="headerlink" title="写，写，写"></a>写，写，写</h3><p>在知乎上看到一个问题<a href="https://www.zhihu.com/question/30161095" target="_blank" rel="noopener">“为什么「道理都懂，然而执行力差」的现象如此普遍？”</a>，徐佳鑫的回答挺令我震撼的。<br>“明白道理”的一瞬只不过是大脑的<em>短期记忆</em>，其影响时间是很短暂的，除非那瞬间感情非常强烈，被影响时间会增长。就如“一朝被蛇咬，十年怕井绳”的情形。 如果想让这个道理对你生活产生实质性的改变，也就是执行力变强大，就要把这个认知变成你的<em>长期记忆</em>。强烈的感情刺激是一种不那么容易产生的方式，另一种增强长期记忆的重要方式是<strong>重复</strong>（具有反馈和不断改进的重复）。健脑如健身，这种执行需要像锻炼肌肉那样，重复的锻炼使你大脑更容易做出有利行动的选择。xx天养成一个习惯还是有道理的，开始时的固定重复锻炼会更容易使之成为一种下意识的选择。</p>
+<p>因此 <strong>写！写！写！</strong> 才是更重要的，先不管其他那么多，就是写，无论好坏，不管别人怎么看，就需要这么任性。先不管内容质量的高低，先把写当作一个习惯去培养。</p>
+<h3 id="锻炼“写”的肌肉"><a href="#锻炼“写”的肌肉" class="headerlink" title="锻炼“写”的肌肉"></a>锻炼“写”的肌肉</h3><p>那又怎么样锻炼”写，写，写”这种执行肌肉呢？</p>
+<p>笑来提到了“另一种世界”，在那里，没有“勤奋”，没有“努力”，没有“坚持”，没有“毅力”，反正就是没有这类的东西。有的是什么？“干脆停不下来”的快感。</p>
+<blockquote>
+<p>当我意识到写作是思考的一种方法，甚至是启动思考、加速思考、提高思考质量的方法之后，我就干脆停不下来了 —— 因为思考对我来说太重要了，不会思考，不能思考，不能正确地思考，不能高效地思考，对我来说简直生不如死，不是吗？</p>
+</blockquote>
+<p>羡慕吧，我也很羡慕。另一个世界好进入吗？不尝试下怎么知道。幸运的是笑来老师提出了”另一世界”的入口：</p>
+<blockquote>
+<p>你得想办法找到你自己<strong>真正喜欢</strong>的，且真的能给你带来<strong>巨大收益</strong>的事情。方法有一个，就是<strong>不断转换角度</strong>去看，不断转换角度去探究，找到一个自己真正喜欢的点，一个点就够，但必须极度喜欢。</p>
+</blockquote>
+<p>看到许多牛人说写作的好处，是不是真的这样，自己试了才知道。能不能找到喜欢的点，还需在锻炼中不断转换角度去思考。</p>
+<p>平时刷微博或者微信公众号，获得的基本都是碎片化的信息，很少记录下来并系统的整理，看过，知道这回事，偶尔也有点想法，因为没有记录也稍纵即逝。现在发现做笔记，并进行个人知识管理真的很重要，以前也在印象笔记上收集了一些，但是没有经过整理消化把信息变成知识，更别提消化后把这些进行输出。输入量不够，积累又不多，输出就更不容易了。已经很长时间没有完整的读成本的了，有必要增加自己的阅读量了，记住一定要记笔记。</p>
+<h3 id="补充–7-15"><a href="#补充–7-15" class="headerlink" title="补充–7.15"></a>补充–7.15</h3><p>以前好奇，胡乱的把公众号给开了，但一篇都没写过。以后会同步在公众号内更新，欢迎关注！</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>wonesky
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wonesky.com/2016/07/09/%E8%BF%98%E8%83%BD%E5%86%99%E4%B8%8B%E5%8E%BB%E5%90%97/" title="还能写下去吗">https://wonesky.com/2016/07/09/%E8%BF%98%E8%83%BD%E5%86%99%E4%B8%8B%E5%8E%BB%E5%90%97/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E5%86%99%E4%BD%9C/" rel="tag"><i class="fa fa-tag"></i> 写作</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2016/04/14/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0/" rel="next" title="Markdown语法简记">
+                  <i class="fa fa-chevron-left"></i> Markdown语法简记
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2016/07/18/%E6%88%91%E4%BB%AC%E9%9C%80%E8%A6%81%E4%B8%AA%E6%AD%8C%E6%89%8B/" rel="prev" title="我们需要个歌手">
+                  我们需要个歌手 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#写，写，写"><span class="nav-number">1.</span> <span class="nav-text">写，写，写</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#锻炼“写”的肌肉"><span class="nav-number">2.</span> <span class="nav-text">锻炼“写”的肌肉</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#补充–7-15"><span class="nav-number">3.</span> <span class="nav-text">补充–7.15</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wonesky"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">wonesky</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wonesky" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wonesky" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/2643563817" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;2643563817" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wonesky2013" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wonesky2013" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wonesky</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

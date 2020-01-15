@@ -1,0 +1,508 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="5月19日在G_F_W的黑名单上又多了一个重量级网站，中文维基百科被关键字屏蔽和DNS污染而无法访问。英文版却并没有受影响，这是要提高国民英语水平的节奏。对于那些经常使用谷歌服务，或者发现经常有想去的网站打不开，再或者想听到不同的人的不同声音来开阔一下视野，或者你想看些国内找不到的历史资料，在此向你介绍几种不同的梯子。梯子的作用就是连接上一台国外的服务器，然后通过那台服务器访问你想要的内容，服务器">
+<meta name="keywords" content="科学上网">
+<meta property="og:type" content="article">
+<meta property="og:title" content="那些爬过的梯子">
+<meta property="og:url" content="https:&#x2F;&#x2F;wonesky.com&#x2F;2015&#x2F;06&#x2F;14&#x2F;%E9%82%A3%E4%BA%9B%E7%88%AC%E8%BF%87%E7%9A%84%E6%A2%AF%E5%AD%90&#x2F;index.html">
+<meta property="og:site_name" content="空一夜航">
+<meta property="og:description" content="5月19日在G_F_W的黑名单上又多了一个重量级网站，中文维基百科被关键字屏蔽和DNS污染而无法访问。英文版却并没有受影响，这是要提高国民英语水平的节奏。对于那些经常使用谷歌服务，或者发现经常有想去的网站打不开，再或者想听到不同的人的不同声音来开阔一下视野，或者你想看些国内找不到的历史资料，在此向你介绍几种不同的梯子。梯子的作用就是连接上一台国外的服务器，然后通过那台服务器访问你想要的内容，服务器">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;goagent.jpg-mypic">
+<meta property="og:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;whats-ssh.png-mypic">
+<meta property="og:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;ssh%E8%AE%BE%E7%BD%AE.png-mypic">
+<meta property="og:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;ssh%E8%AE%BE%E7%BD%AE2.png-mypic">
+<meta property="og:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;whats-shadowsocks.png-mypic">
+<meta property="og:updated_time" content="2019-11-16T06:00:06.844Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;goagent.jpg-mypic">
+
+<link rel="canonical" href="https://wonesky.com/2015/06/14/%E9%82%A3%E4%BA%9B%E7%88%AC%E8%BF%87%E7%9A%84%E6%A2%AF%E5%AD%90/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>那些爬过的梯子 | 空一夜航</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">空一夜航</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">wonesky's Blog</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wonesky.com/2015/06/14/%E9%82%A3%E4%BA%9B%E7%88%AC%E8%BF%87%E7%9A%84%E6%A2%AF%E5%AD%90/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wonesky">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="空一夜航">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          那些爬过的梯子
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2015-06-14 10:54:56" itemprop="dateCreated datePublished" datetime="2015-06-14T10:54:56+08:00">2015-06-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-16 14:00:06" itemprop="dateModified" datetime="2019-11-16T14:00:06+08:00">2019-11-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index">
+                    <span itemprop="name">工具使用</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>5月19日在G_F_W的黑名单上又多了一个重量级网站，中文维基百科被关键字屏蔽和DNS污染而无法访问。英文版却并没有受影响，这是要提高国民英语水平的节奏。对于那些经常使用谷歌服务，或者发现经常有想去的网站打不开，再或者想听到不同的人的不同声音来开阔一下视野，或者你想看些国内找不到的历史资料，在此向你介绍几种不同的梯子。梯子的作用就是连接上一台国外的服务器，然后通过那台服务器访问你想要的内容，服务器再把内容返回给你。关于梯子的获取类似蛋和鸡的关系，一般情况下梯子都在挡在墙的外面，当你获得一个后翻过去后就会发现更多的工具。</p>
+<a id="more"></a>
+
+<p>关于GFW对网站的屏蔽的一些简单方法有对域名的屏蔽，对IP的封锁，还有对DNS劫持和污染，让你访问的域名无法解析的真正的IP地址。复杂点的就是对关键字的屏蔽和对流量分析进行屏蔽。对于某些大型的网站服务，比如google，你可以通过搜寻可用的IP，修改本地hosts文件来访问。毕竟这种方法只能绕过少许特定网站，局限性很大，常见梯子的种类一般有以下三种：</p>
+<ul>
+<li>http/https proxy</li>
+<li>socks proxy</li>
+<li>vpn</li>
+</ul>
+<p>一般情况下，这些稳定的服务都是要收费的，网上也能搜到一些免费的账号和工具软件，但都有些限制，比如账户密码不定时改变，就像某种网站的网址一样，还有的有流量限制等，毕竟天下没有免费的午餐。</p>
+<h2 id="http-https-proxy"><a href="#http-https-proxy" class="headerlink" title="http/https proxy"></a>http/https proxy</h2><p>对于第一种，基于http/https的代理，简单易用但只有对使用http协议才起作用，一般用于网页浏览。一个比较有名的工具<a href="https://github.com/goagent/goagent" target="_blank" rel="noopener">GoAgent</a>就是利用google提供的Google App Engine服务实现http proxy。下面是GoAgent的工作原理：<br><img src="http://wonesky.qiniudn.com/goagent.jpg-mypic" style="display:block;margin:auto"/><br>你可以利用GAE和GoAgent创建你的http代理服务器。详细教程见<a href="https://github.com/goagent/goagent/blob/wiki/InstallGuide.md" target="_blank" rel="noopener">GoAgentInstallGuide</a>。由于google的IP经常被封，你可能需要<a href="https://github.com/yinqiwen/gscan/" target="_blank" rel="noopener">gscan</a>或者<a href="https://github.com/azzvx/gogotester" target="_blank" rel="noopener">gogotester</a>等工具来扫描测试可用的google IP。由于http是明文传输，安全性比较差,一般使用的不多。主要介绍下第二种和第三种。</p>
+<h2 id="socks-proxy"><a href="#socks-proxy" class="headerlink" title="socks proxy"></a>socks proxy</h2><p>SOCKS是一种网络传输协议，主要用于客户端与外网服务器之间通讯的中间传递。具体详见<a href="http://baike.baidu.com/view/262359.htm" target="_blank" rel="noopener">百度百科</a>或者<a href="https://zh.wikipedia.org/wiki/SOCKS" target="_blank" rel="noopener">维基百科</a>介绍。</p>
+<p>socks4已经过时了，现在是用socks5代理。我们需要的是一台能没有GFW阻碍的socks5代理服务器，把我们的访问请求转交给它，它把请求传送到目的地，并把请求的结果返还给你。</p>
+<h3 id="SSH-socks-proxy"><a href="#SSH-socks-proxy" class="headerlink" title="SSH socks proxy"></a>SSH socks proxy</h3><p>由于socks代理自身并没有什么加密机制，为了安全考虑，可以使用<a href="http://baike.baidu.com/subview/16184/5909252.htm" target="_blank" rel="noopener">SSH</a>（安全外壳协议），来加密连接远程服务器。下图是通过SSH socks proxy访问网站的原理图：<br><img src="http://wonesky.qiniudn.com/whats-ssh.png-mypic" style="display:block;margin:auto"/><br>现在需要一款SSH Client工具和一个SSH账号就可以连通通往自由的大门了。常用的SSH客户端软件有<a href="http://www.bitvise.com/ssh-client-download" target="_blank" rel="noopener">Bitvise SSH Client</a> 和MyEnTunnel，在网上找个免费的或者购买个SSh账号（需要主机名或IP、远程端口号、用户名和密码）就可以连接远程主机了，再通过配置本地代理，使浏览器或某些软件通过梯子联网了。Bitvise SSH Client设置连接远程socks代理服务器见下图，包括远程主机IP或域名地址，远程端口，用户名和密码：<br><img src="http://wonesky.qiniudn.com/ssh%E8%AE%BE%E7%BD%AE.png-mypic" alt="BVssh设置"></p>
+<p>然后设置本地代理供浏览器和其它软件使用，Listing Interface设为本地IP：127.0.0.1，Listen Port可以设置为1025~65535中的一个未被占用的端口号，这个设置会为你电脑上的软件服务，在后面的浏览器设置中会用到，下图是我的设置：<br><img src="http://wonesky.qiniudn.com/ssh%E8%AE%BE%E7%BD%AE2.png-mypic" alt="BVssh设置"></p>
+<p>在浏览器端firefox或chrome浏览器通过扩展可方便的管理网络的代理 ，使只有特定的网站使用代理，其他的使用本地网络。Chrome使用<a href="https://github.com/FelisCatus/SwitchyOmega/releases" target="_blank" rel="noopener">SwitchyOmega</a>，firefox使用<a href="https://addons.mozilla.org/zh-CN/firefox/addon/autoproxy/" target="_blank" rel="noopener">autoproxy</a>，扩展设置时，协议选择SOCKS5，代理服务器填127.0.0.1，端口填写你使用的本地代理端口号，即上步设置的那个Listen Port。SwitchyOmega设置官方详细教程在<a href="https://github.com/FelisCatus/SwitchyOmega/wiki/GFWList" target="_blank" rel="noopener">这儿</a>。设置好后就可以畅游网络了。</p>
+<p>福利：两个提供免费ssh账号的网站 <del><a href="http://boafanx.tabboa.com/free/" target="_blank" rel="noopener">http://boafanx.tabboa.com/free/</a></del> 和<a href="http://blog.onlybird.com/getfreessh" target="_blank" rel="noopener">http://blog.onlybird.com/getfreessh</a></p>
+<h3 id="Shadowsocks"><a href="#Shadowsocks" class="headerlink" title="Shadowsocks"></a>Shadowsocks</h3><p>Shadowsocks（中文名称：影梭）是一个安全的socks5代理，用于保护网络流量，是一个开源项目，官网shadowsocks.org已被屏蔽，<a href="https://github.com/shadowsocks" target="_blank" rel="noopener">github地址</a>。其原理如下图所示：<br><img src="http://wonesky.qiniudn.com/whats-shadowsocks.png-mypic" alt="shadowsocks原理"></p>
+<p>shadowsocks和SSH socks代理使用差不多，需要一个shadowsocks客户端，一个shadowsocks服务端账号，连接后在设置下本地代理。shadowsocks是一个跨平台的，根据你的系统去搜客户端，很容易就找到，实在找不到联系我。使用设置步骤和SSH非常相似，这儿就不多说了。</p>
+<p>另外放点福利，一个免费提供shadowsocks账号的网站<a href="http://www.ishadowsocks.net/" target="_blank" rel="noopener">ishadowsocks.net</a>,这个账号每隔6小时密码变更一次。<br>另一个是<a href="http://www.shadowsocks.asia" target="_blank" rel="noopener">shadowsocks中文社区</a>和<a href="http://i.freevpnss.com/" target="_blank" rel="noopener">FreeVPNSS</a>。<br><del>另一个是<a href="http://ssnode.co/" target="_blank" rel="noopener">ssnode.co</a> 的邀请码,这个网站提供每月5G的流量的shadowsocks免费账号。<br>邀请码1：ODY3NWE3NGUwMWM4YTIwZThh<br>邀请码2：zFhYjY1MGIyNWI0MTE0ZTkzY</del></p>
+<h2 id="vpn"><a href="#vpn" class="headerlink" title="vpn"></a>vpn</h2><p>VPN是虚拟专用网络的缩写，是通过建立虚拟网络连接远程VPN服务器。百度百科上对<a href="http://baike.baidu.com/view/891121.htm" target="_blank" rel="noopener">VPN代理</a>的解释。使用VPN是全部连接都使用代理，只要你连着VPN，所有的联网软件都使用代理连网。</p>
+<p>推荐一款我用过的免费VPN——VPNgate，由日本国立筑波大学研究生院为学术研究目的运营，目前已经开源，由志愿者提供主机。但他的主页已被墙，这就造成了梯子在墙的那边的尴尬境地，有了一个就能容易的找到另一个，万事开头难。github上一个提供VPNgate网址镜像和下载的<a href="https://github.com/waylau/vpngate-mirrors" target="_blank" rel="noopener">网址</a></p>
+<p>还有一款<a href="https://www.psiphon3.net/zh/index.html" target="_blank" rel="noopener">赛风</a>，它提供了集SSH和VPN于一体的代理软件，服务器账号是自动搜寻的。很方便使用，也比较容易被封，道高一尺魔高一丈，双方都在不断的升级。</p>
+<h2 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h2><p>如果你对安全要求比较严格，要对免费的提高警惕，就需要搭建自己的代理服务器。并不要只使用上面介绍的单一的代理，你需要去了解下<a href="http://www.theonionrouter.com/" target="_blank" rel="noopener">TOR</a>或者<a href="https://geti2p.net/zh/" target="_blank" rel="noopener">i2p</a>进行多重代理，或者更甚再加上使用虚拟机，隔离代理和上网环境。另外可以看下<a href="https://prism-break.org/zh-CN/all/" target="_blank" rel="noopener">粉碎棱镜</a>项目上提供的安全的软件。</p>
+<p>前一段github上<a href="https://github.com/greatfire/wiki" target="_blank" rel="noopener">greatfire</a>遭受来自GFW的DDOS攻击，因为其提供了一些免爬墙就可访问的网站镜像。</p>
+<h2 id="手机端"><a href="#手机端" class="headerlink" title="手机端"></a>手机端</h2><p>在此只说安卓系统，上面介绍的像赛风，shadowsocks（影梭）在手机都有客户端，另外还有fqroutuer。只有影梭需要你有Shadowsocks账号，而账号上面已有免费的提供了。</p>
+<h2 id="结语"><a href="#结语" class="headerlink" title="结语"></a>结语</h2><p>俗话说身怀利器，杀心自起，不要以为你有了工具就可以随意干些坏事了，你太低估他们的能力了，只是你还没有那个价值值得去找你。这些只是你减少被束缚的工具，在互联网时代，信息并不是那么容易被垄断的。</p>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>wonesky
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wonesky.com/2015/06/14/%E9%82%A3%E4%BA%9B%E7%88%AC%E8%BF%87%E7%9A%84%E6%A2%AF%E5%AD%90/" title="那些爬过的梯子">https://wonesky.com/2015/06/14/%E9%82%A3%E4%BA%9B%E7%88%AC%E8%BF%87%E7%9A%84%E6%A2%AF%E5%AD%90/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/%E7%A7%91%E5%AD%A6%E4%B8%8A%E7%BD%91/" rel="tag"><i class="fa fa-tag"></i> 科学上网</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2015/06/05/%E5%85%8D%E8%B4%B9%E6%90%AD%E5%BB%BA%E7%8B%AC%E7%AB%8B%E5%8D%9A%E5%AE%A2/" rel="next" title="免费搭建独立博客">
+                  <i class="fa fa-chevron-left"></i> 免费搭建独立博客
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2016/03/22/git%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" rel="prev" title="Git使用总结">
+                  Git使用总结 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-2"><a class="nav-link" href="#http-https-proxy"><span class="nav-number">1.</span> <span class="nav-text">http/https proxy</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#socks-proxy"><span class="nav-number">2.</span> <span class="nav-text">socks proxy</span></a><ol class="nav-child"><li class="nav-item nav-level-3"><a class="nav-link" href="#SSH-socks-proxy"><span class="nav-number">2.1.</span> <span class="nav-text">SSH socks proxy</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Shadowsocks"><span class="nav-number">2.2.</span> <span class="nav-text">Shadowsocks</span></a></li></ol></li><li class="nav-item nav-level-2"><a class="nav-link" href="#vpn"><span class="nav-number">3.</span> <span class="nav-text">vpn</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#其它"><span class="nav-number">4.</span> <span class="nav-text">其它</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#手机端"><span class="nav-number">5.</span> <span class="nav-text">手机端</span></a></li><li class="nav-item nav-level-2"><a class="nav-link" href="#结语"><span class="nav-number">6.</span> <span class="nav-text">结语</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wonesky"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">wonesky</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wonesky" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wonesky" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/2643563817" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;2643563817" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wonesky2013" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wonesky2013" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wonesky</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>

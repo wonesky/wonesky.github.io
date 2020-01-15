@@ -1,0 +1,613 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+  <meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=2">
+<meta name="theme-color" content="#222">
+<meta name="generator" content="Hexo 4.0.0">
+  <link rel="apple-touch-icon" sizes="180x180" href="/images/apple-touch-icon-next.png">
+  <link rel="icon" type="image/png" sizes="32x32" href="/images/favicon-32x32-next.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="/images/favicon-16x16-next.png">
+  <link rel="mask-icon" href="/images/logo.svg" color="#222">
+  <meta http-equiv="Cache-Control" content="no-transform">
+  <meta http-equiv="Cache-Control" content="no-siteapp">
+
+<link rel="stylesheet" href="/css/main.css">
+
+
+<link rel="stylesheet" href="/lib/font-awesome/css/font-awesome.min.css">
+
+
+<script id="hexo-configurations">
+  var NexT = window.NexT || {};
+  var CONFIG = {
+    root: '/',
+    scheme: 'Pisces',
+    version: '7.5.0',
+    exturl: false,
+    sidebar: {"position":"left","display":"post","offset":12,"onmobile":false},
+    copycode: {"enable":false,"show_result":false,"style":null},
+    back2top: {"enable":true,"sidebar":false,"scrollpercent":false},
+    bookmark: {"enable":false,"color":"#222","save":"auto"},
+    fancybox: false,
+    mediumzoom: false,
+    lazyload: false,
+    pangu: false,
+    algolia: {
+      appID: '',
+      apiKey: '',
+      indexName: '',
+      hits: {"per_page":10},
+      labels: {"input_placeholder":"Search for Posts","hits_empty":"We didn't find any results for the search: ${query}","hits_stats":"${hits} results found in ${time} ms"}
+    },
+    localsearch: {"enable":true,"trigger":"auto","top_n_per_article":1,"unescape":false,"preload":false},
+    path: 'search.xml',
+    motion: {"enable":true,"async":false,"transition":{"post_block":"fadeIn","post_header":"slideDownIn","post_body":"slideDownIn","coll_header":"slideLeftIn","sidebar":"slideUpIn"}},
+    sidebarPadding: 40
+  };
+</script>
+
+  <meta name="description" content="Markdown 是一种轻量级 标记语言，它允许我们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档。这是维基百科的解释Markdown。它不像字处理软件Word有大量的排版设置，在Markdown中通过简单的语法来设置输出样式。">
+<meta name="keywords" content="Markdown">
+<meta property="og:type" content="article">
+<meta property="og:title" content="Markdown语法简记">
+<meta property="og:url" content="https:&#x2F;&#x2F;wonesky.com&#x2F;2016&#x2F;04&#x2F;14&#x2F;Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0&#x2F;index.html">
+<meta property="og:site_name" content="空一夜航">
+<meta property="og:description" content="Markdown 是一种轻量级 标记语言，它允许我们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档。这是维基百科的解释Markdown。它不像字处理软件Word有大量的排版设置，在Markdown中通过简单的语法来设置输出样式。">
+<meta property="og:locale" content="zh-CN">
+<meta property="og:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;Markdown-img-test.png-myimg">
+<meta property="og:updated_time" content="2019-11-16T06:00:08.507Z">
+<meta name="twitter:card" content="summary">
+<meta name="twitter:image" content="http:&#x2F;&#x2F;wonesky.qiniudn.com&#x2F;Markdown-img-test.png-myimg">
+
+<link rel="canonical" href="https://wonesky.com/2016/04/14/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0/">
+
+
+<script id="page-configurations">
+  // https://hexo.io/docs/variables.html
+  CONFIG.page = {
+    sidebar: "",
+    isHome: false,
+    isPost: true,
+    isPage: false,
+    isArchive: false
+  };
+</script>
+
+  <title>Markdown语法简记 | 空一夜航</title>
+  
+
+
+
+
+
+
+  <noscript>
+  <style>
+  .use-motion .brand,
+  .use-motion .menu-item,
+  .sidebar-inner,
+  .use-motion .post-block,
+  .use-motion .pagination,
+  .use-motion .comments,
+  .use-motion .post-header,
+  .use-motion .post-body,
+  .use-motion .collection-header { opacity: initial; }
+
+  .use-motion .site-title,
+  .use-motion .site-subtitle {
+    opacity: initial;
+    top: initial;
+  }
+
+  .use-motion .logo-line-before i { left: initial; }
+  .use-motion .logo-line-after i { right: initial; }
+  </style>
+</noscript>
+
+</head>
+
+<body itemscope itemtype="http://schema.org/WebPage">
+  <div class="container use-motion">
+    <div class="headband"></div>
+
+    <header class="header" itemscope itemtype="http://schema.org/WPHeader">
+      <div class="header-inner"><div class="site-brand-container">
+  <div class="site-meta">
+
+    <div>
+      <a href="/" class="brand" rel="start">
+        <span class="logo-line-before"><i></i></span>
+        <span class="site-title">空一夜航</span>
+        <span class="logo-line-after"><i></i></span>
+      </a>
+    </div>
+        <h1 class="site-subtitle" itemprop="description">wonesky's Blog</h1>
+      
+  </div>
+
+  <div class="site-nav-toggle">
+    <div class="toggle" aria-label="切换导航栏">
+      <span class="toggle-line toggle-line-first"></span>
+      <span class="toggle-line toggle-line-middle"></span>
+      <span class="toggle-line toggle-line-last"></span>
+    </div>
+  </div>
+</div>
+
+
+<nav class="site-nav">
+  
+  <ul id="menu" class="menu">
+        <li class="menu-item menu-item-home">
+
+    <a href="/" rel="section"><i class="fa fa-fw fa-home"></i>首页</a>
+
+  </li>
+        <li class="menu-item menu-item-categories">
+
+    <a href="/categories/" rel="section"><i class="fa fa-fw fa-th"></i>分类</a>
+
+  </li>
+        <li class="menu-item menu-item-archives">
+
+    <a href="/archives/" rel="section"><i class="fa fa-fw fa-archive"></i>归档</a>
+
+  </li>
+      <li class="menu-item menu-item-search">
+        <a role="button" class="popup-trigger"><i class="fa fa-search fa-fw"></i>搜索
+        </a>
+      </li>
+  </ul>
+
+</nav>
+  <div class="site-search">
+    <div class="popup search-popup">
+    <div class="search-header">
+  <span class="search-icon">
+    <i class="fa fa-search"></i>
+  </span>
+  <div class="search-input-container">
+    <input autocomplete="off" autocorrect="off" autocapitalize="none"
+           placeholder="搜索..." spellcheck="false"
+           type="text" id="search-input">
+  </div>
+  <span class="popup-btn-close">
+    <i class="fa fa-times-circle"></i>
+  </span>
+</div>
+<div id="search-result"></div>
+
+</div>
+<div class="search-pop-overlay"></div>
+
+  </div>
+</div>
+    </header>
+
+    
+  <div class="back-to-top">
+    <i class="fa fa-arrow-up"></i>
+    <span>0%</span>
+  </div>
+
+
+    <main class="main">
+      <div class="main-inner">
+        <div class="content-wrap">
+          
+
+          <div class="content">
+            
+
+  <div class="posts-expand">
+      
+  
+  
+  <article itemscope itemtype="http://schema.org/Article" class="post-block " lang="zh-CN">
+    <link itemprop="mainEntityOfPage" href="https://wonesky.com/2016/04/14/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0/">
+
+    <span hidden itemprop="author" itemscope itemtype="http://schema.org/Person">
+      <meta itemprop="image" content="/images/avatar.jpg">
+      <meta itemprop="name" content="wonesky">
+      <meta itemprop="description" content="">
+    </span>
+
+    <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
+      <meta itemprop="name" content="空一夜航">
+    </span>
+      <header class="post-header">
+        <h2 class="post-title" itemprop="name headline">
+          Markdown语法简记
+        </h2>
+
+        <div class="post-meta">
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-calendar-o"></i>
+              </span>
+              <span class="post-meta-item-text">发表于</span>
+
+              <time title="创建时间：2016-04-14 20:05:31" itemprop="dateCreated datePublished" datetime="2016-04-14T20:05:31+08:00">2016-04-14</time>
+            </span>
+              <span class="post-meta-item">
+                <span class="post-meta-item-icon">
+                  <i class="fa fa-calendar-check-o"></i>
+                </span>
+                <span class="post-meta-item-text">更新于</span>
+                <time title="修改时间：2019-11-16 14:00:08" itemprop="dateModified" datetime="2019-11-16T14:00:08+08:00">2019-11-16</time>
+              </span>
+            <span class="post-meta-item">
+              <span class="post-meta-item-icon">
+                <i class="fa fa-folder-o"></i>
+              </span>
+              <span class="post-meta-item-text">分类于</span>
+                <span itemprop="about" itemscope itemtype="http://schema.org/Thing">
+                  <a href="/categories/%E5%B7%A5%E5%85%B7%E4%BD%BF%E7%94%A8/" itemprop="url" rel="index">
+                    <span itemprop="name">工具使用</span>
+                  </a>
+                </span>
+            </span>
+
+          
+
+        </div>
+      </header>
+
+    
+    
+    
+    <div class="post-body" itemprop="articleBody">
+
+      
+        <p>Markdown 是一种轻量级 <strong>标记语言</strong>，它允许我们使用易读易写的纯文本格式编写文档，然后转换成有效的XHTML(或者HTML)文档。这是维基百科的解释<a href="https://zh.wikipedia.org/zh-cn/Markdown" target="_blank" rel="noopener">Markdown</a>。它不像字处理软件Word有大量的排版设置，在Markdown中通过简单的语法来设置输出样式。</p>
+<a id="more"></a>
+
+<h3 id="Markdown-优点"><a href="#Markdown-优点" class="headerlink" title="Markdown 优点"></a>Markdown 优点</h3><p>Markdown是纯文本格式，在任何平台都可以使用常用的编辑器去写。一些只用过windows的童鞋认识不到纯文本的好处，觉得Word不是很好吗，他们不知道很多Mac和Linux平台的用户是没装Word的，况且纯文本文件基本可以使用任何一个编辑器就可以打开，不用再打开类似Word的庞大的软件。Markdown另一个有点就是你只需写，用键盘把文字内容啪啪啪地打出来后就已经排版好了，最好从头到尾都不要使用鼠标。适合那些经常写代码、博客文章等的人，github上的说明文档都是使用Markdown来写，许多博客平台也支持Markdown格式写作。</p>
+<p>下面简单记录下Markdown的语法，以备查询。<br>首先记住两点：</p>
+<ul>
+<li><strong>标记符号与后面文字中间要有空格</strong></li>
+<li><strong>如果想输出标记符使用反斜杠来转义符 “&quot;</strong></li>
+</ul>
+<h3 id="段落："><a href="#段落：" class="headerlink" title="段落："></a><strong>段落</strong>：</h3><p>段落间以一个或以上的空行来分</p>
+<h3 id="换行："><a href="#换行：" class="headerlink" title="换行："></a><strong>换行</strong>：</h3><p>两个以上空格再加回车</p>
+<h3 id="标题："><a href="#标题：" class="headerlink" title="标题："></a><strong>标题</strong>：</h3><p>用#来标识标题，在行首插入1到6个#，对应到标题1到6阶。比如</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line"># 一级标题  </span><br><span class="line">## 二级标题</span><br><span class="line">###### 六级标题</span><br></pre></td></tr></table></figure>
+<p>显示效果就是</p>
+<blockquote>
+<h1 id="一级标题"><a href="#一级标题" class="headerlink" title="一级标题"></a>一级标题</h1><h2 id="二级标题"><a href="#二级标题" class="headerlink" title="二级标题"></a>二级标题</h2><h6 id="六级标题"><a href="#六级标题" class="headerlink" title="六级标题"></a>六级标题</h6></blockquote>
+<h3 id="列表"><a href="#列表" class="headerlink" title="列表"></a><strong>列表</strong></h3><ul>
+<li>无序列表：使用*、+或是-作为列表标记。列表分级前面加tab或4个空格。比如</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">+ 红色</span><br><span class="line">- 蓝色</span><br><span class="line">* 绿色</span><br><span class="line">	- 深绿</span><br><span class="line">	- 浅绿</span><br></pre></td></tr></table></figure>
+<p>显示效果如下：</p>
+<blockquote>
+<ul>
+<li>红色</li>
+</ul>
+<ul>
+<li>蓝色</li>
+</ul>
+<ul>
+<li>绿色<ul>
+<li>深绿</li>
+<li>浅绿</li>
+</ul>
+</li>
+</ul>
+</blockquote>
+<ul>
+<li>有序列表： 使用数字接着一个英文句点 你在列表标记上使用的数字并不会影响显示输出的结果。</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br></pre></td><td class="code"><pre><span class="line">1. 首先</span><br><span class="line">2. 其次，第一段：巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</span><br><span class="line"></span><br><span class="line">   第二段：巴拉巴拉巴拉巴拉</span><br><span class="line">5. 最后</span><br><span class="line">    3.第一</span><br><span class="line">    1.第二</span><br></pre></td></tr></table></figure>
+<p>输出显示</p>
+<blockquote>
+<ol>
+<li>首先</li>
+<li>其次，第一段：巴拉巴拉巴拉巴拉巴拉巴拉巴拉巴拉</li>
+</ol>
+</blockquote>
+<pre><code>第二段：巴拉巴拉巴拉巴拉</code></pre><blockquote>
+<ol start="5">
+<li>最后<ol start="3">
+<li>第一</li>
+<li>第二</li>
+</ol>
+</li>
+</ol>
+</blockquote>
+<p>当然最好还是按照字母顺序，这样感觉比较顺。如果你想输出数字加点可以使用转义符反斜杠<code>1\.</code> 则输出 1.。若果列表中有多个段落则要空行后 段落开头加一个Tab或4个空格。</p>
+<h3 id="区块引用"><a href="#区块引用" class="headerlink" title="区块引用"></a><strong>区块引用</strong></h3><p>使用 &gt; 表示文字引用。区块引用可以嵌套（例如：引用内的引用），只要根据层次加上不同数量的 &gt; 就可以了。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">&gt; 野火烧不尽</span><br><span class="line">&gt;&gt; 春风吹又生</span><br></pre></td></tr></table></figure>
+<p>显示为</p>
+<blockquote>
+<p>野火烧不尽</p>
+<blockquote>
+<p>春风吹又生</p>
+</blockquote>
+</blockquote>
+<p>如果要在列表项目内放进引用，那 &gt; 就需要缩进。如果要放代码区块的话，该区块就需要缩进两次，也就是 8 个空格或是 2 个制表符</p>
+<h3 id="代码区块"><a href="#代码区块" class="headerlink" title="代码区块"></a><strong>代码区块</strong></h3><ul>
+<li>代码快：对程序猿来说，如果想贴代码，则不希望它以一般段落文件的方式去排版，而是照原来代码的样子显示。在Markdown中只要简单地缩进 4 个空格或是 1 个制表符就可以。一个代码区块会一直持续到没有缩进的那一行（或是文件结尾）</li>
+</ul>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br></pre></td><td class="code"><pre><span class="line">tell application &quot;Foo&quot;</span><br><span class="line">    beep</span><br><span class="line">end tell</span><br></pre></td></tr></table></figure>
+<p>显示效果：</p>
+<pre><code>tell application &quot;Foo&quot;
+    beep
+end tell</code></pre><ul>
+<li><p>行内代码快：如果要标记一小段行内代码，你可以用反引号把它包起来（`）。比如：使用`printf()`,显示为<code>printf()</code>。</p>
+</li>
+<li><p>加强代码快：对于特定编程语言，希望其语法高亮的显示，行号显示时可以在首尾分别使用三个反引号（`）把代码包起来。</p>
+</li>
+</ul>
+<pre><code><figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line"><span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure></code></pre><p>显示效果：</p>
+<figure class="highlight python"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br></pre></td><td class="code"><pre><span class="line"><span class="meta">@requires_authorization</span></span><br><span class="line"><span class="function"><span class="keyword">def</span> <span class="title">somefunc</span><span class="params">(param1=<span class="string">''</span>, param2=<span class="number">0</span>)</span>:</span></span><br><span class="line">    <span class="string">'''A docstring'''</span></span><br><span class="line">    <span class="keyword">if</span> param1 &gt; param2: <span class="comment"># interesting</span></span><br><span class="line">        <span class="keyword">print</span> <span class="string">'Greater'</span></span><br><span class="line"><span class="keyword">return</span> (param2 - param1 + <span class="number">1</span>) <span class="keyword">or</span> <span class="literal">None</span></span><br></pre></td></tr></table></figure>
+<h3 id="分割线"><a href="#分割线" class="headerlink" title="分割线"></a><strong>分割线</strong></h3><p>你可以在一行中用三个以上的星号、减号、底线来建立一个分隔线，行内不能有其他东西。你也可以在星号或是减号中间插入空格。下面每种写法都可以建立分隔线:</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br></pre></td><td class="code"><pre><span class="line">* * *</span><br><span class="line"></span><br><span class="line">***</span><br><span class="line"></span><br><span class="line">*****</span><br><span class="line"></span><br><span class="line">- - -</span><br><span class="line"></span><br><span class="line">---------------------------------------</span><br></pre></td></tr></table></figure>
+
+<h3 id="链接和图片"><a href="#链接和图片" class="headerlink" title="链接和图片"></a><strong>链接和图片</strong></h3><p>使用 [描述](链接地址) 为文字增加外链接。使用 ![描述](图片链接地址) 插入图像。</p>
+<figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br></pre></td><td class="code"><pre><span class="line">[我的博客](http://www.wonesky.com)</span><br><span class="line">![Markdown图片测试](http://wonesky.qiniudn.com/Markdown-img-test.png)</span><br></pre></td></tr></table></figure>
+<p><a href="http://www.wonesky.com" target="_blank" rel="noopener">我的博客</a></p>
+<p><img src="http://wonesky.qiniudn.com/Markdown-img-test.png-myimg" alt="Markdown图片测试"></p>
+<h3 id="斜体和粗体"><a href="#斜体和粗体" class="headerlink" title="斜体和粗体"></a><strong>斜体和粗体</strong></h3><p>使用 *或_ 标识斜体。使用两个*或_ 标识粗体。</p>
+<pre><code>斜体   *斜体*    
+粗体  __粗体__</code></pre><p>效果如下</p>
+<blockquote>
+<p><em>斜体</em></p>
+</blockquote>
+<blockquote>
+<p><strong>粗体</strong></p>
+</blockquote>
+<p>如果你的 * 和 _ 两边都有空白的话，它们就只会被当成普通的符号。</p>
+<h3 id="删除线"><a href="#删除线" class="headerlink" title="删除线"></a><strong>删除线</strong></h3><p>使用 ~~ 表示删除线。</p>
+<pre><code>~~这是一段错误的文本。~~</code></pre><p>效果：</p>
+<blockquote>
+<p><del>这是一段错误的文本。</del></p>
+</blockquote>
+<h3 id="表格支持"><a href="#表格支持" class="headerlink" title="表格支持"></a><strong>表格支持</strong></h3><figure class="highlight plain"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br></pre></td><td class="code"><pre><span class="line">| 项目        | 价格   |  数量  |</span><br><span class="line">| --------   | -----:  | :----:  |</span><br><span class="line">| 计算机     | $1600 |   5     |</span><br><span class="line">| 手机        |   $12   |   12   |</span><br><span class="line">| 管线        |    $1    |  234  |</span><br></pre></td></tr></table></figure>
+<p>显示效果如下:</p>
+<table>
+<thead>
+<tr>
+<th>项目</th>
+<th align="right">价格</th>
+<th align="center">数量</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>计算机</td>
+<td align="right">$1600</td>
+<td align="center">5</td>
+</tr>
+<tr>
+<td>手机</td>
+<td align="right">$12</td>
+<td align="center">12</td>
+</tr>
+<tr>
+<td>管线</td>
+<td align="right">$1</td>
+<td align="center">234</td>
+</tr>
+</tbody></table>
+<h3 id="其它"><a href="#其它" class="headerlink" title="其它"></a>其它</h3><p>还有一些比较高级的用法，比如流程图和序列图的绘制，LaTeX 公式的支持（访问 <a href="http://meta.math.stackexchange.com/questions/5020/mathjax-basic-tutorial-and-quick-reference" target="_blank" rel="noopener">MathJax</a> ，使用方法参考，<a href="https://www.zybuluo.com/codeep/note/163962" target="_blank" rel="noopener">公式指导手册</a>。还有待办事宜 Todo 列表，使用带有 [ ] 或 [x] （未完成或已完成）项的列表语法撰写一个待办事宜列表。</p>
+<h3 id="Markdown-编辑器"><a href="#Markdown-编辑器" class="headerlink" title="Markdown 编辑器"></a>Markdown 编辑器</h3><p>支持Markdown的编辑器太多，功能也不完全一致，有的是用来进行基本的写作，有的是用来写代码的，有的甚至只是博客平台配套的编辑器。月光博客有篇文章对Markdown编辑器总结的不错，请参考<a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="noopener">好用的Markdown编辑器一览</a></p>
+<h3 id="参考资料"><a href="#参考资料" class="headerlink" title="参考资料"></a>参考资料</h3><ul>
+<li><a href="http://wowubuntu.com/markdown/" target="_blank" rel="noopener">Markdown 语法说明 (简体中文版)</a></li>
+<li><a href="http://www.williamlong.info/archives/4319.html" target="_blank" rel="noopener">月光博客——好用的Markdown编辑器一览</a></li>
+</ul>
+
+    </div>
+
+    
+    
+    
+        
+
+<div>
+<ul class="post-copyright">
+  <li class="post-copyright-author">
+    <strong>本文作者： </strong>wonesky
+  </li>
+  <li class="post-copyright-link">
+    <strong>本文链接：</strong>
+    <a href="https://wonesky.com/2016/04/14/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0/" title="Markdown语法简记">https://wonesky.com/2016/04/14/Markdown%E8%AF%AD%E6%B3%95%E7%AE%80%E8%AE%B0/</a>
+  </li>
+  <li class="post-copyright-license">
+    <strong>版权声明： </strong>本博客所有文章除特别声明外，均采用 <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" rel="noopener" target="_blank"><i class="fa fa-fw fa-creative-commons"></i>BY-NC-SA</a> 许可协议。转载请注明出处！
+  </li>
+</ul>
+</div>
+
+
+      <footer class="post-footer">
+          
+          <div class="post-tags">
+              <a href="/tags/Markdown/" rel="tag"><i class="fa fa-tag"></i> Markdown</a>
+          </div>
+
+        
+
+          <div class="post-nav">
+            <div class="post-nav-next post-nav-item">
+                <a href="/2016/03/22/git%E4%BD%BF%E7%94%A8%E6%80%BB%E7%BB%93/" rel="next" title="Git使用总结">
+                  <i class="fa fa-chevron-left"></i> Git使用总结
+                </a>
+            </div>
+
+            <span class="post-nav-divider"></span>
+
+            <div class="post-nav-prev post-nav-item">
+                <a href="/2016/07/09/%E8%BF%98%E8%83%BD%E5%86%99%E4%B8%8B%E5%8E%BB%E5%90%97/" rel="prev" title="还能写下去吗">
+                  还能写下去吗 <i class="fa fa-chevron-right"></i>
+                </a>
+            </div>
+          </div>
+      </footer>
+    
+  </article>
+  
+  
+  
+
+  </div>
+
+
+          </div>
+          
+
+        </div>
+          
+  
+  <div class="toggle sidebar-toggle">
+    <span class="toggle-line toggle-line-first"></span>
+    <span class="toggle-line toggle-line-middle"></span>
+    <span class="toggle-line toggle-line-last"></span>
+  </div>
+
+  <aside class="sidebar">
+    <div class="sidebar-inner">
+
+      <ul class="sidebar-nav motion-element">
+        <li class="sidebar-nav-toc">
+          文章目录
+        </li>
+        <li class="sidebar-nav-overview">
+          站点概览
+        </li>
+      </ul>
+
+      <!--noindex-->
+      <div class="post-toc-wrap sidebar-panel">
+          <div class="post-toc motion-element"><ol class="nav"><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-优点"><span class="nav-number">1.</span> <span class="nav-text">Markdown 优点</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#段落："><span class="nav-number">2.</span> <span class="nav-text">段落：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#换行："><span class="nav-number">3.</span> <span class="nav-text">换行：</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#标题："><span class="nav-number">4.</span> <span class="nav-text">标题：</span></a></li></ol></li></ol></li><li class="nav-item nav-level-1"><a class="nav-link" href="#一级标题"><span class="nav-number"></span> <span class="nav-text">一级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-2"><a class="nav-link" href="#二级标题"><span class="nav-number"></span> <span class="nav-text">二级标题</span></a><ol class="nav-child"><li class="nav-item nav-level-6"><a class="nav-link" href="#六级标题"><span class="nav-number">0.0.0.1.</span> <span class="nav-text">六级标题</span></a></li></ol></li></ol></li></ol></li><li class="nav-item nav-level-3"><a class="nav-link" href="#列表"><span class="nav-number">1.</span> <span class="nav-text">列表</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#区块引用"><span class="nav-number">2.</span> <span class="nav-text">区块引用</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#代码区块"><span class="nav-number">3.</span> <span class="nav-text">代码区块</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#分割线"><span class="nav-number">4.</span> <span class="nav-text">分割线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#链接和图片"><span class="nav-number">5.</span> <span class="nav-text">链接和图片</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#斜体和粗体"><span class="nav-number">6.</span> <span class="nav-text">斜体和粗体</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#删除线"><span class="nav-number">7.</span> <span class="nav-text">删除线</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#表格支持"><span class="nav-number">8.</span> <span class="nav-text">表格支持</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#其它"><span class="nav-number">9.</span> <span class="nav-text">其它</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#Markdown-编辑器"><span class="nav-number">10.</span> <span class="nav-text">Markdown 编辑器</span></a></li><li class="nav-item nav-level-3"><a class="nav-link" href="#参考资料"><span class="nav-number">11.</span> <span class="nav-text">参考资料</span></a></li></ol></div>
+      </div>
+      <!--/noindex-->
+
+      <div class="site-overview-wrap sidebar-panel">
+        <div class="site-author motion-element" itemprop="author" itemscope itemtype="http://schema.org/Person">
+    <img class="site-author-image" itemprop="image" alt="wonesky"
+      src="/images/avatar.jpg">
+  <p class="site-author-name" itemprop="name">wonesky</p>
+  <div class="site-description" itemprop="description"></div>
+</div>
+<div class="site-state-wrap motion-element">
+  <nav class="site-state">
+      <div class="site-state-item site-state-posts">
+          <a href="/archives/">
+        
+          <span class="site-state-item-count">15</span>
+          <span class="site-state-item-name">日志</span>
+        </a>
+      </div>
+      <div class="site-state-item site-state-categories">
+            <a href="/categories/">
+          
+        <span class="site-state-item-count">5</span>
+        <span class="site-state-item-name">分类</span></a>
+      </div>
+      <div class="site-state-item site-state-tags">
+            <a href="/tags/">
+        <span class="site-state-item-count">19</span>
+        <span class="site-state-item-name">标签</span></a>
+      </div>
+  </nav>
+</div>
+  <div class="links-of-author motion-element">
+      <span class="links-of-author-item">
+        <a href="https://github.com/wonesky" title="GitHub → https:&#x2F;&#x2F;github.com&#x2F;wonesky" rel="noopener" target="_blank"><i class="fa fa-fw fa-github"></i>GitHub</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://weibo.com/u/2643563817" title="Weibo → https:&#x2F;&#x2F;weibo.com&#x2F;u&#x2F;2643563817" rel="noopener" target="_blank"><i class="fa fa-fw fa-weibo"></i>Weibo</a>
+      </span>
+      <span class="links-of-author-item">
+        <a href="https://twitter.com/wonesky2013" title="Twitter → https:&#x2F;&#x2F;twitter.com&#x2F;wonesky2013" rel="noopener" target="_blank"><i class="fa fa-fw fa-twitter"></i>Twitter</a>
+      </span>
+  </div>
+  <div class="cc-license motion-element" itemprop="license">
+    <a href="https://creativecommons.org/licenses/by-nc-sa/4.0/null" class="cc-opacity" rel="noopener" target="_blank"><img src="/images/cc-by-nc-sa.svg" alt="Creative Commons"></a>
+  </div>
+
+
+
+      </div>
+
+    </div>
+  </aside>
+  <div id="sidebar-dimmer"></div>
+
+
+      </div>
+    </main>
+
+    <footer class="footer">
+      <div class="footer-inner">
+        
+
+<div class="copyright">
+  
+  &copy; 2019 – 
+  <span itemprop="copyrightYear">2020</span>
+  <span class="with-love">
+    <i class="fa fa-user"></i>
+  </span>
+  <span class="author" itemprop="copyrightHolder">wonesky</span>
+</div>
+  <div class="powered-by">由 <a href="https://hexo.io/" class="theme-link" rel="noopener" target="_blank">Hexo</a> 强力驱动 v4.0.0
+  </div>
+  <span class="post-meta-divider">|</span>
+  <div class="theme-info">主题 – <a href="https://pisces.theme-next.org/" class="theme-link" rel="noopener" target="_blank">NexT.Pisces</a> v7.5.0
+  </div>
+
+        
+
+
+
+
+
+
+
+
+
+
+
+
+        
+      </div>
+    </footer>
+  </div>
+
+  
+  <script src="/lib/anime.min.js"></script>
+  <script src="/lib/velocity/velocity.min.js"></script>
+  <script src="/lib/velocity/velocity.ui.min.js"></script>
+<script src="/js/utils.js"></script><script src="/js/motion.js"></script>
+<script src="/js/schemes/pisces.js"></script>
+<script src="/js/next-boot.js"></script>
+
+
+
+  
+
+
+
+
+  <script src="/js/local-search.js"></script>
+
+
+
+
+
+
+
+
+
+
+
+
+
+  
+
+  
+
+</body>
+</html>
